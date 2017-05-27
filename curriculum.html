@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curriculum</title>
+	<meta charset="utf-8">
+	<style>
+		
+		html {
+			box-sizing: border-box;
+			background-color: #EDEDED;
+			font-family: Helvetica;
+		}
+		
+		*, *:before, *:after {
+			box-sizing: inherit;
+		}
+
+		.row {
+			clear: both;
+			padding-top: 0.05%;
+		}
+				
+		.cell-left-small {
+			float: left;
+			width: 15%; 
+			color: #4A444A;
+		}
+		
+		.cell-left-big {
+			float: left;
+			width: 85%; 
+		}
+
+		.arriba {
+			float: left;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 2.5vw;
+			font-weight: bold;
+			color: #35373B;
+			line-height: 2vw;
+			width: 80%;
+			height: 18vw;
+			border-bottom: solid 1px silver;
+			background-color: white;
+			margin: 15% 10% 0% 10%;
+			border-radius: 0.5vw;
+		}
+		.medio {
+			float: left;
+			width: 80%;
+			height: 62vw;
+			border-bottom: solid 1px silver;
+			background-color: white;
+			margin: 0% 10%;
+			border-radius: 0.5vw;
+			color: #85807F;
+		}
+
+		.column-left {
+			width: 60%;
+			float: left;
+			background-color: white;
+			padding: 0.3vw 1.5vw;
+			border-radius: 0.5vw;
+			border: none;
+		}
+
+		.column-right {
+			width: 40%;
+			float: left;
+			background-color: white;
+			padding: 0.3vw 1.5vw;
+			border-radius: 0.5vw;
+		}
+
+		.pie {
+			float: left;
+			background-color: white;
+			width: 80%;
+			height: 3.5vw;
+			margin: 0.08% 10% 10% 10%;
+			border-radius: 0.5vw;
+			border: none;
+			text-align: right;
+			color: gray;
+			padding-right: 1vw;
+			line-height: 1.5vw;
+		}
+		.img-responsive {
+			max-width: 100%;
+			border-radius: 100%;
+			border: solid 0.75vw #EDEDED;
+		}
+		.orange-text {
+			text-transform: uppercase;
+			color: #F0563E;
+		}
+		.div-img {
+			position: relative;
+			bottom: 12vw;
+		}
+		.div-skills {
+			background-color: #F0563E;
+			color: white;
+			text-transform: uppercase;
+			border: solid 0.2vw white;
+			border-radius: 1vw;
+			padding: 0.7vw;
+		}
+		.p-idiomas {
+			border-bottom: solid 1px silver;
+			line-height: 3vw;
+		}
+		button {
+			margin-right: 2%;
+			padding: 15px;
+			border-radius: 1.5vw;
+			border: none;
+			background-color: #A55362;
+			color: white;
+		}
+		b {
+			font-size: 18px;
+			color: #4A444A;
+		}
+
+		span {
+			font-weight: bold;
+			color: black;
+		}
+		
+		.edu-p {
+			background-color: #EEEEEE;
+			padding: 0vw 0.5vw 0.5vw 1vw;
+			margin-top: 1vw;
+			border-radius: 1vw;
+		}
+
+		.edu{
+			text-align: center;
+		}
+
+		.exp {
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="arriba">
+		<div class="div-img">
+			<img src="foto-perfil.jpg" alt="foto perfil" class="img-responsive">
+			<p>Hola mi nombre es <span class="orange-text">Juan</span> y este es mi resumen</p>
+		</div>
+	</div>
+	
+	<div class="medio">
+		<div class="column-left">
+			
+			<div class="row">
+				<h2 class="orange-text">// acerca de</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. </p>
+			</div>
+			
+			<div class="row">
+				<h2 class="orange-text">// educación</h2>
+				<div class="row">
+					<div class="cell-left-small edu">
+						<h4>2012</h4>
+					</div>
+					<div class="cell-left-big edu-p">
+						<p><b>I was born in Constanza </b> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="cell-left-small edu">
+						<h4>1986</h4>
+					</div>
+					<div class="cell-left-big edu-p">
+						<p><b>I was born in Constanza </b> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					</div>
+				</div>
+
+			</div>
+			
+			<div class="row">
+				<h2 class="orange-text">// experiencia</h2>
+				<div class="row">
+					<div class="cell-left-small">
+						<h4><span>Google</span><br>2013-2014</h4>
+					</div>
+					<div class="cell-left-big exp">
+						<p><b>I was born in Constanza </b> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="cell-left-small">
+						<h4><span>Google</span><br>2013-2014</h4>
+					</div>
+					<div class="cell-left-big exp">
+						<p><b>I was born in Constanza </b> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="column-right">
+			<div class="row">
+				<h2 class="orange-text">// contacto</h2>
+				<ul>
+					<li><b>Email: </b>jasca18@hotmail.com</li>
+					<li><b>Skype:</b> jasca84</li>
+					<li><b>Twitter:</b> juantonio18</li>
+					<li><b>Facebook:</b> /juansantacruz</li>
+				</ul>
+			</div>
+			<div class="row">
+				<h2 class="orange-text">// skills</h2>
+				<div class="div-skills" style="width: 98%">Python</div>
+				<div class="div-skills" style="width: 90%">html</div>
+				<div class="div-skills" style="width: 75%">css</div>
+				<div class="div-skills" style="width: 50%">js</div>
+				<div class="div-skills" style="width: 25%">php</div>
+			</div>
+			<div class="row">
+				<h2 class="orange-text">// idiomas</h2>
+				<p class="p-idiomas">Inglés &nbsp&nbsp&nbsp&nbsp
+				<img src="star-l-on.png" alt="star">
+				<img src="star-l-on.png" alt="star">
+				<img src="star-l-on.png" alt="star">
+				<img src="star-l-on.png" alt="star">
+				<img src="star-l-off.png" alt="star"></p>
+				<p class="p-idiomas">Español &nbsp 
+				<img src="star-l-on.png" alt="star">
+				<img src="star-l-on.png" alt="star">
+				<img src="star-l-on.png" alt="star">
+				<img src="star-l-on.png" alt="star">
+				<img src="star-l-on.png" alt="star"></p>
+			</div>
+			<div class="row">
+				<h2 class="orange-text">// hobbies</h2>
+				<button>Fotografía</button>
+				<button>Deporte</button>
+				<button>Música</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="pie">
+		<p>Curso desarrollo Frontend 2017</p>
+	</div>
+</body>
+</html>
