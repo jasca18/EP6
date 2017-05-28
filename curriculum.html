@@ -5,144 +5,288 @@
 	<meta charset="utf-8">
 	<style>
 		
-		html {
-			box-sizing: border-box;
-			background-color: #EDEDED;
-			font-family: Helvetica;
-		}
+		@media (min-width: 1021px)  {
 		
-		*, *:before, *:after {
-			box-sizing: inherit;
+			html {
+				box-sizing: border-box;
+				background-color: #EDEDED;
+				font-family: Helvetica;
+			}
+			
+			*, *:before, *:after {
+				box-sizing: inherit;
+			}
+
+			.row {
+				clear: both;
+				padding-top: 0.05%;
+			}
+					
+			.cell-left-small {
+				float: left;
+				width: 15%; 
+				color: #4A444A;
+			}
+			
+			.cell-left-big {
+				float: left;
+				width: 85%; 
+			}
+
+			.arriba {
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: bold;
+				color: #35373B;
+				line-height: 2vw;
+				width: 80%;
+				height: 15vw;
+				border-bottom: solid 1px silver;
+				background-color: white;
+				margin: 13vw 10vw 0vw 10vw;
+				border-radius: 0.5vw;
+			}
+			.medio {
+				width: 80%;
+				height: 60vw;
+				border-bottom: solid 1px silver;
+				background-color: white;
+				margin: 0vw 10vw;
+				border-radius: 0.5vw;
+				color: #85807F;
+			}
+
+			.column-left {
+				width: 60%;
+				float: left;	
+				background-color: white;
+				padding: 0.3vw 1.5vw;
+				border-radius: 0.5vw;
+			}
+
+			.column-right {
+				width: 40%;
+				float: left;
+				background-color: white;
+				padding: 0.3vw 1.5vw;
+				border-radius: 0.5vw;
+			}
+
+			.pie {
+				float: left;
+				background-color: white;
+				width: 80%;
+				height: 3.5vw;
+				margin: 0vw 10vw 10vw 10vw;
+				border-radius: 0.5vw;
+				text-align: right;
+				color: gray;
+				padding-right: 1vw;
+			}
+			.img-responsive {
+				border-radius: 100%;
+				border: solid 0.75vw #EDEDED;
+				max-width: 50%;
+			}
+			.orange-text {
+				text-transform: uppercase;
+				color: #F0563E;
+			}
+			.div-img {
+				position: relative;
+				bottom: 115px;
+				padding: 0% 10% 0% 10%;
+			}
+			.div-img h2{
+				position: relative;
+				bottom: 2px;
+			}
+			.div-skills {
+				position: relative;
+				background-color: #F0563E;
+				color: white;
+				text-transform: uppercase;
+				border: solid 0.2vw white;
+				border-radius: 1vw;
+				padding: 0.7vw;
+			}
+			.p-idiomas {
+				position: relative;
+				border-bottom: solid 1px silver;
+				line-height: 3vw;
+			}
+			button {
+				margin-right: 2vw;
+				padding: 1.2vw;
+				border-radius: 1.5vw;
+				border: none;
+				background-color: #A55362;
+				color: white;
+			}
+			b {
+				color: #4A444A;
+			}
+
+			span {
+				font-weight: bold;
+				color: black;
+			}
+			
+			.edu-p {
+				background-color: #EEEEEE;
+				padding: 0vw 0.5vw 0.5vw 1vw;
+				margin-top: 1vw;
+				border-radius: 1vw;
+			}
+
+			.edu{
+				text-align: center;
+			}
+
+			.exp {
+				padding: 0vw 0.5vw 0.5vw 1vw;
+			}
 		}
 
-		.row {
-			clear: both;
-			padding-top: 0.05%;
-		}
-				
-		.cell-left-small {
-			float: left;
-			width: 15%; 
-			color: #4A444A;
-		}
+
+		@media (min-width: 0px) and (max-width: 1020px){
+			html {
+				box-sizing: border-box;
+				background-color: #EDEDED;
+				font-family: Helvetica;
+			}
 		
-		.cell-left-big {
-			float: left;
-			width: 85%; 
-		}
+			*, *:before, *:after {
+				box-sizing: inherit;
+			}
 
-		.arriba {
-			float: left;
-			text-align: center;
-			text-transform: uppercase;
-			font-size: 2.5vw;
-			font-weight: bold;
-			color: #35373B;
-			line-height: 2vw;
-			width: 80%;
-			height: 18vw;
-			border-bottom: solid 1px silver;
-			background-color: white;
-			margin: 15% 10% 0% 10%;
-			border-radius: 0.5vw;
-		}
-		.medio {
-			float: left;
-			width: 80%;
-			height: 62vw;
-			border-bottom: solid 1px silver;
-			background-color: white;
-			margin: 0% 10%;
-			border-radius: 0.5vw;
-			color: #85807F;
-		}
+			.row {
+				clear: both;
+			}
+					
+			.cell-left-small {
+				width: 100%; 
+				color: #4A444A;
+			}
+			
+			.cell-left-big {
+				width: 100%; 
+			}
 
-		.column-left {
-			width: 60%;
-			float: left;
-			background-color: white;
-			padding: 0.3vw 1.5vw;
-			border-radius: 0.5vw;
-			border: none;
-		}
+			.arriba {
+				width: 80%;
+				text-transform: uppercase;
+				font-weight: bold;
+				color: #35373B;
+				border-bottom: solid 1px silver;
+				margin: 15vw 10vw 0vw 10vw;
+				background-color: white;
+				border-radius: 0.5vw;
+			}
+			.medio {
+				width: 80%;
+				margin: 0vw 10vw 0vw 10vw;
+				background-color: white;
+				border-radius: 0.5vw;
+				border-bottom: solid 1px silver;
+				color: #85807F;
+			}
 
-		.column-right {
-			width: 40%;
-			float: left;
-			background-color: white;
-			padding: 0.3vw 1.5vw;
-			border-radius: 0.5vw;
-		}
+			.column-left {
+				float: left;
+				width: 100%;
+				background-color: white;
+				padding: 2.5vw 1.5vw;
+				border-radius: 0.5vw;
+			}
 
-		.pie {
-			float: left;
-			background-color: white;
-			width: 80%;
-			height: 3.5vw;
-			margin: 0.08% 10% 10% 10%;
-			border-radius: 0.5vw;
-			border: none;
-			text-align: right;
-			color: gray;
-			padding-right: 1vw;
-			line-height: 1.5vw;
-		}
-		.img-responsive {
-			max-width: 100%;
-			border-radius: 100%;
-			border: solid 0.75vw #EDEDED;
-		}
-		.orange-text {
-			text-transform: uppercase;
-			color: #F0563E;
-		}
-		.div-img {
-			position: relative;
-			bottom: 12vw;
-		}
-		.div-skills {
-			background-color: #F0563E;
-			color: white;
-			text-transform: uppercase;
-			border: solid 0.2vw white;
-			border-radius: 1vw;
-			padding: 0.7vw;
-		}
-		.p-idiomas {
-			border-bottom: solid 1px silver;
-			line-height: 3vw;
-		}
-		button {
-			margin-right: 2%;
-			padding: 15px;
-			border-radius: 1.5vw;
-			border: none;
-			background-color: #A55362;
-			color: white;
-		}
-		b {
-			font-size: 18px;
-			color: #4A444A;
-		}
+			.column-right {
+				float: left;
+				width: 100%;
+				background-color: white;
+				padding: 0.3vw 1.5vw;
+				border-radius: 0.5vw;
+			}
 
-		span {
-			font-weight: bold;
-			color: black;
-		}
-		
-		.edu-p {
-			background-color: #EEEEEE;
-			padding: 0vw 0.5vw 0.5vw 1vw;
-			margin-top: 1vw;
-			border-radius: 1vw;
-		}
+			.pie {
+				float: left;
+				width: 80%;
+				background-color: white;
+				height: 50px;
+				margin: 0.2vw 10vw 10vw 10vw;
+				border-radius: 0.5vw;
+				text-align: right;
+				color: gray;
+				padding-right: 1vw;
+			}
+			.img-responsive {
+				border-radius: 100%;
+				border: solid 0.75vw #EDEDED;
+				max-width: 75%;
+			}
+			.orange-text {
+				text-transform: uppercase;
+				color: #F0563E;
+			}
+			.div-img {
+				position: relative;
+				width: 80%;
+				bottom: 55px;
+				margin: 0vw 25vw 0vw 15vw;
+			}
+			.div-img h2 {
+				position: relative;
+				margin-right:  10%;
+			}
+			.div-skills {
+				width: 80%;
+				position: relative;
+				background-color: #F0563E;
+				color: white;
+				text-transform: uppercase;
+				border: solid 0.2vw white;
+				border-radius: 1vw;
+				padding: 0.7vw;
+			}
+			.p-idiomas {
+				float: left;
+				width: 80%;
+				position: relative;
+				border-bottom: solid 1px silver;
+				line-height: 3vw;
+			}
+			button {
+				margin-bottom: 2vw;
+				margin-right: 2vw;
+				padding: 2vw;
+				border-radius: 1.5vw;
+				border: none;
+				background-color: #A55362;
+				color: white;
+			}
+			b {
+				color: #4A444A;
+			}
 
-		.edu{
-			text-align: center;
-		}
+			span {
+				font-weight: bold;
+				color: black;
+			}
+			
+			.edu-p {
+				background-color: #EEEEEE;
+				padding: 0vw 0.5vw 0.5vw 1vw;
+				margin-top: 1vw;
+				border-radius: 1vw;
+			}
 
-		.exp {
+			.edu {
+				text-align: left;
+			}
 
+			.exp {
+				padding: 0vw 0.5vw 0.5vw 1vw;
+			}
 		}
 
 	</style>
@@ -151,7 +295,7 @@
 	<div class="arriba">
 		<div class="div-img">
 			<img src="foto-perfil.jpg" alt="foto perfil" class="img-responsive">
-			<p>Hola mi nombre es <span class="orange-text">Juan</span> y este es mi resumen</p>
+			<h2>Hola mi nombre es <span class="orange-text">Juan</span> y este es mi resumen</h2>
 		</div>
 	</div>
 	
